@@ -1,0 +1,16 @@
+.footer {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 50px;
+}
+.footer__logo {
+  width: 122px;
+  height: 40px;
+}
+.footer__credit {
+  padding: 0 10px;
+}
