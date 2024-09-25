@@ -11,8 +11,12 @@
     width: 122px;
     height: 40px;
   }
+}
 
-  &__credit {
-    padding: 0 10px;
+@media screen and (min-width: 768px) {
+  .footer {
+    &__credit {
+      font-size: 24px;
+    }
   }
 }

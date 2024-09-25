@@ -11,6 +11,9 @@
   width: 122px;
   height: 40px;
 }
-.footer__credit {
-  padding: 0 10px;
+
+@media screen and (min-width: 768px) {
+  .footer__credit {
+    font-size: 24px;
+  }
 }

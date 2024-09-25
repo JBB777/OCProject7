@@ -20,10 +20,24 @@
   &__navbar__desktop {
     display: none;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header {
+    &__logo {
+      width: 210px;
+      height: 68px;
+    }
+
     &__navbar__mobile {
       display: none;
     }
