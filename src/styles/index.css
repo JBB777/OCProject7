@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #ff6060;
+}
+
 body {
   min-width: 360px;
   max-width: 1440px;
