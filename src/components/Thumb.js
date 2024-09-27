@@ -1,4 +1,4 @@
-import '../styles/Thumb.css';
+import '../styles/Thumb/Thumb.css';
 
 function Thumb({ title }) {
   return (

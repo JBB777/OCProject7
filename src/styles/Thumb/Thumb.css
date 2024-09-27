@@ -1,0 +1,23 @@
+@import '../index.css';
+.thumb {
+  width: 335px;
+  height: 255px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  margin: 10px;
+}
+.thumb__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 340px;
+    height: 340px;
+  }
+}

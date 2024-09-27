@@ -1,4 +1,4 @@
-import '../styles/Dropdown.css';
+import '../styles/Dropdown/Dropdown.css';
 import React, { useState } from 'react';
 
 function Dropdown({ title, content }) {

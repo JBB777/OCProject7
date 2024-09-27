@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header__logo {
+  width: 145px;
+  height: 47px;
+}
+.header__navbar__mobile {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  font-weight: 500;
+}
+.header__navbar__desktop {
+  display: none;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:focus {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 210px;
+    height: 68px;
+  }
+  .header__navbar__mobile {
+    display: none;
+  }
+  .header__navbar__desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}

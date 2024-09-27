@@ -1,0 +1,60 @@
+@import '../index.css';
+
+.dropdown {
+  width: 335px;
+
+  &__title-container {
+    background: var(--primary-color);
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  &__title {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f673;
+    height: 151px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    width: 582px;
+
+    &__title-container {
+      height: 52px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__content {
+      height: 227px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown {
+    width: 1023px;
+
+    &__title {
+      font-size: 24px;
+    }
+    &__content {
+      height: 220px;
+    }
+  }
+}
