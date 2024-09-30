@@ -7,11 +7,11 @@ function Header() {
     <header className="header">
       <img src={logo} alt="logo de l'agence Kasa" className="header__logo" />
       <nav className="header__navbar__mobile">
-        <Link to="/home">ACCUEIL</Link>
+        <Link to="/">ACCUEIL</Link>
         <Link to="/apropos">A PROPOS</Link>
       </nav>
       <nav className="header__navbar__desktop">
-        <Link to="/home">Accueil</Link>
+        <Link to="/">Accueil</Link>
         <Link to="/apropos">A Propos</Link>
       </nav>
     </header>

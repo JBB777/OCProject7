@@ -1,0 +1,30 @@
+.carrousel {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.carrousel__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.carrousel i {
+  position: absolute;
+  top: 45%;
+  color: white;
+  font-size: 30px;
+}
+.carrousel .fa-chevron-left {
+  left: 10px;
+}
+.carrousel .fa-chevron-right {
+  right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .carrousel__img {
+    border-radius: 25px;
+  }
+}

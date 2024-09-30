@@ -1,23 +1,32 @@
 @import '../index.css';
 .thumb {
-  width: 335px;
+  position: relative;
   height: 255px;
+}
+.thumb__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
   border-radius: 10px;
-  background: var(--primary-color);
-  display: flex;
-  justify-content: left;
-  align-items: flex-end;
-  margin: 10px;
 }
 .thumb__title {
+  width: 90%;
+  position: absolute;
   font-size: 18px;
   font-weight: 700;
+  z-index: 99999;
   color: white;
+  top: 80%;
+  left: 2%;
 }
 
 @media screen and (min-width: 768px) {
   .thumb {
-    width: 340px;
     height: 340px;
+  }
+  .thumb__title {
+    top: 85%;
   }
 }
