@@ -1,7 +1,5 @@
 .details {
   width: 100%;
-}
-.details__title-container {
   display: flex;
   flex-direction: column;
 }

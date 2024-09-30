@@ -1,16 +1,16 @@
 import '../styles/Banner/Banner.css';
 
-function Banner({ imgBanner, title }) {
+function Banner(props) {
   return (
     <div className="banner">
       <div className="banner__opacity"></div>
       <img
         className="banner__img"
-        src={imgBanner}
+        src={props.imgBanner}
         alt="Photo en arrière plan de la banière."
       />
       <div className="banner__text">
-        <p>{title}</p>
+        <p>{props.title}</p>
       </div>
     </div>
   );

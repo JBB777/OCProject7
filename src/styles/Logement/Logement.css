@@ -1,3 +1,14 @@
-.logements {
+.logement {
   background: aliceblue;
+}
+.logement__details, .logement__dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .logement__details, .logement__dropdown {
+    display: flex;
+    flex-direction: row;
+  }
 }

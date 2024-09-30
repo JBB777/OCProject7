@@ -1,23 +1,15 @@
 import '../styles/Logement/Details.css';
 import Tag from './Tag';
-import Host from './Host';
-import Rating from './Rating';
 
-function Details({ title, location, tabTags, nbStars, host }) {
+function Details(props) {
   return (
     <div className="details">
-      <div className="details__title-container">
-        <h1>{title}</h1>
-        <p>{location}</p>
-        <div className="details__tags">
-          {tabTags.map((tag) => {
-            return <Tag tagName={tag} />;
-          })}
-        </div>
-      </div>
-      <div>
-        <Host props={host} />
-        <Rating nbStars={nbStars} />
+      <h1>{props.title}</h1>
+      <p>{props.location}</p>
+      <div className="details__tags">
+        {props.tabTags.map((tag) => {
+          return <Tag tagName={tag} />;
+        })}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
-function Rating({ nbStars }) {
+function Rating(props) {
   return (
     <div>
-      <p>{nbStars}</p>
+      <p>{props.rating}</p>
     </div>
   );
 }
