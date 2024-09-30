@@ -12,7 +12,7 @@ function Logement() {
   return (
     <>
       <main>
-        <Carrousel slides={logement.pictures} />
+        <Carrousel pictures={logement.pictures} />
         <Details
           title={logement.title}
           location={logement.location}

@@ -1,6 +1,6 @@
 @import '../index.css';
 .dropdown {
-  width: 335px;
+  width: 100%;
 }
 .dropdown__title-container {
   background: var(--primary-color);

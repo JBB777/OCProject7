@@ -1,8 +1,8 @@
 import '../styles/Carrousel/Carrousel.css';
 import { useState } from 'react';
 
-function Carrousel({ slides }) {
-  const length = slides.length;
+function Carrousel(props) {
+  const length = props.pictures.length;
   const [index, setIndex] = useState(0);
 
   function prevPicture() {
@@ -19,7 +19,7 @@ function Carrousel({ slides }) {
     <div className="carrousel">
       <img
         className="carrousel__img"
-        src={slides[index]}
+        src={props.pictures[index]}
         alt={`Photo numéro ${index + 1} du carrousel`}
       />
       <i className="fa-solid fa-chevron-left" onClick={prevPicture}></i>
