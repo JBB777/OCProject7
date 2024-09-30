@@ -1,7 +1,7 @@
 import '../styles/Dropdown/Dropdown.css';
 import React, { useState } from 'react';
 
-function Dropdown({ title, content }) {
+function Dropdown(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleIcon() {
@@ -11,7 +11,7 @@ function Dropdown({ title, content }) {
   return (
     <div className="dropdown">
       <div className="dropdown__title-container">
-        <span className="dropdown__title">{title}</span>
+        <span className="dropdown__title">{props.title}</span>
         <span onClick={toggleIcon}>
           {isOpen ? (
             <i className="fa-solid fa-chevron-up"></i>
@@ -20,7 +20,7 @@ function Dropdown({ title, content }) {
           )}
         </span>
       </div>
-      {isOpen && <div className="dropdown__content">{content}</div>}
+      {isOpen && <div className="dropdown__content">{props.content}</div>}
     </div>
   );
 }
