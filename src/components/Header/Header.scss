@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+
+  &__logo {
+    width: 145px;
+    height: 47px;
+  }
+
+  &__navbar__mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+  }
+
+  &__navbar__desktop {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__logo {
+      width: 210px;
+      height: 68px;
+    }
+
+    &__navbar__mobile {
+      display: none;
+    }
+
+    &__navbar__desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 57px;
+      font-size: 24px;
+    }
+  }
+}

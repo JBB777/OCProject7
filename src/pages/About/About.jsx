@@ -1,0 +1,24 @@
+import './About.scss';
+import renseignements from '../../datas/about.json';
+import img from '../../assets/imgBannerAbout.jpg';
+import Banner from '../../components/Banner/Banner';
+import Dropdown from '../../components/Dropdown/Dropdown';
+
+function Apropos() {
+  return (
+    <>
+      <main>
+        <Banner imgBanner={img} title="" />
+        <div className="about__dropdown">
+          {renseignements.map((categorie) => {
+            return (
+              <Dropdown title={categorie.title} content={categorie.content} />
+            );
+          })}
+        </div>
+      </main>
+    </>
+  );
+}
+
+export default Apropos;

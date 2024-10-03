@@ -1,0 +1,13 @@
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  &__name {
+    color: var(--primary-color);
+  }
+  &__img {
+    border-radius: 65px;
+    height: 50px;
+  }
+}
