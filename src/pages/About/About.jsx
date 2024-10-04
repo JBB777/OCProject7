@@ -4,7 +4,7 @@ import img from '../../assets/imgBannerAbout.jpg';
 import Banner from '../../components/Banner/Banner';
 import Dropdown from '../../components/Dropdown/Dropdown';
 
-function Apropos() {
+function About() {
   return (
     <>
       <main>
@@ -21,4 +21,4 @@ function Apropos() {
   );
 }
 
-export default Apropos;
+export default About;

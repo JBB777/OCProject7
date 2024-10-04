@@ -1,0 +1,21 @@
+.error {
+  &__txt {
+    text-align: center;
+    color: var(--primary-color);
+  }
+  &__404 {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 100px 60px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+  &__link {
+    color: black;
+    font-size: 14px;
+    margin: 100px 0;
+  }
+}

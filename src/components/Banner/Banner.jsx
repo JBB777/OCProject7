@@ -1,9 +1,16 @@
 import './Banner.scss';
 
 function Banner(props) {
+  function bannerOpacity() {
+    if (props.title === '') {
+      return <div className="banner__opacity banner__opacity-about"></div>;
+    } else {
+      return <div className="banner__opacity"></div>;
+    }
+  }
   return (
     <div className="banner">
-      <div className="banner__opacity"></div>
+      {bannerOpacity()}
       <img
         className="banner__img"
         src={props.imgBanner}

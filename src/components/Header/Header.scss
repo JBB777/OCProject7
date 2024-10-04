@@ -4,20 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px 0 20px;
+  text-transform: uppercase;
 
   &__logo {
     width: 145px;
     height: 47px;
   }
 
-  &__navbar__mobile {
+  &__navbar {
     display: flex;
     flex-direction: row;
     gap: 26px;
-  }
-
-  &__navbar__desktop {
-    display: none;
   }
 
   a {
@@ -33,18 +30,13 @@
 
 @media screen and (min-width: 768px) {
   .header {
+    text-transform: none;
     &__logo {
       width: 210px;
       height: 68px;
     }
 
-    &__navbar__mobile {
-      display: none;
-    }
-
-    &__navbar__desktop {
-      display: flex;
-      flex-direction: row;
+    &__navbar {
       gap: 57px;
       font-size: 24px;
     }

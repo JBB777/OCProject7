@@ -6,13 +6,9 @@ function Header() {
   return (
     <header className="header">
       <img src={logo} alt="logo de l'agence Kasa" className="header__logo" />
-      <nav className="header__navbar__mobile">
-        <Link to="/">ACCUEIL</Link>
-        <Link to="/apropos">A PROPOS</Link>
-      </nav>
-      <nav className="header__navbar__desktop">
+      <nav className="header__navbar">
         <Link to="/">Accueil</Link>
-        <Link to="/apropos">A Propos</Link>
+        <Link to="/a-propos">A Propos</Link>
       </nav>
     </header>
   );

@@ -5,6 +5,7 @@
   gap: 5px;
   &__name {
     color: var(--primary-color);
+    white-space: wrap;
   }
   &__img {
     border-radius: 65px;
