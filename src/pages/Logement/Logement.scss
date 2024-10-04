@@ -24,6 +24,7 @@
   }
   &__tags {
     gap: 10px;
+    flex-wrap: wrap;
   }
   &__host {
     justify-content: space-between;
