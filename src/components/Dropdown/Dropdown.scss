@@ -34,6 +34,7 @@
     overflow: hidden;
     font-weight: 400;
     padding: 0 20px;
+    line-height: 1.5;
 
     ul {
       list-style: none;
@@ -45,16 +46,16 @@
 
 @media screen and (min-width: 768px) {
   .dropdown {
-    width: 582px;
+    width: 80%;
+    grid-template-rows: 52px 0;
 
-    &__title-container {
-      height: 52px;
+    &__active {
+      grid-template-rows: 52px 1fr;
     }
     &__title {
       font-size: 18px;
     }
     &__content {
-      height: 227px;
       font-size: 18px;
     }
   }
@@ -62,13 +63,10 @@
 
 @media screen and (min-width: 1024px) {
   .dropdown {
-    width: 1023px;
-
     &__title {
       font-size: 24px;
     }
     &__content {
-      height: 220px;
     }
   }
 }

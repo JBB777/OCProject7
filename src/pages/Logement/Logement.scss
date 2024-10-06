@@ -44,6 +44,16 @@
     &__dropdown {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__dropdown {
+      gap: 60px;
+    }
+
+    &__host {
+      flex-direction: column;
+      gap: 15px;
     }
   }
 }
