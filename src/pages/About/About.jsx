@@ -12,7 +12,11 @@ function About() {
         <div className="about__dropdown">
           {renseignements.map((categorie) => {
             return (
-              <Dropdown title={categorie.title} content={categorie.content} />
+              <Dropdown
+                key={categorie.title}
+                title={categorie.title}
+                content={categorie.content}
+              />
             );
           })}
         </div>

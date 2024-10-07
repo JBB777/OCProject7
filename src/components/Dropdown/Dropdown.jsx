@@ -8,7 +8,7 @@ function Dropdown(props) {
 
   function listingEquipments(content) {
     if (typeof content == 'object') {
-      const listMots = content.map((mot) => <li>{mot}</li>);
+      const listMots = content.map((mot) => <li key={mot}>{mot}</li>);
       return <ul>{listMots}</ul>;
     } else {
       return <p>{content}</p>;

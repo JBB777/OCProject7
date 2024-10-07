@@ -18,11 +18,11 @@ function Rating(props) {
 
   return (
     <div className="rating-container">
-      {starsTab.map((value) =>
+      {starsTab.map((value, index) =>
         value === 1 ? (
-          <img src={starFully} alt="icône étoile pleine" />
+          <img key={index} src={starFully} alt="icône étoile pleine" />
         ) : (
-          <img src={starEmpty} alt="icône étoile vide" />
+          <img key={index} src={starEmpty} alt="icône étoile vide" />
         ),
       )}
     </div>
