@@ -46,14 +46,36 @@
       flex-direction: row;
       justify-content: space-between;
     }
+    &__infos {
+      margin-bottom: 25px;
+    }
 
     &__dropdown {
       gap: 60px;
+    }
+    &__title {
+      h1 {
+        font-size: 24px;
+        padding-right: 10px;
+      }
+      p {
+        font-size: 18px;
+      }
     }
 
     &__host {
       flex-direction: column;
       gap: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logement {
+    &__title {
+      h1 {
+        font-size: 36px;
+      }
     }
   }
 }

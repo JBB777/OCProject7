@@ -15,7 +15,9 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-
+    i {
+      font-size: 18px;
+    }
     .fa-solid-inactive {
       display: none;
     }
@@ -46,25 +48,30 @@
 
 @media screen and (min-width: 768px) {
   .dropdown {
-    width: 80%;
-    grid-template-rows: 52px 0;
+    width: 85%;
+    grid-template-rows: 36px 0;
 
     &__active {
-      grid-template-rows: 52px 1fr;
+      grid-template-rows: 36px 1fr;
+    }
+    i {
+      font-size: 24px;
     }
     &__title {
-      font-size: 18px;
+      font-size: 14px;
     }
     &__content {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   .dropdown {
-    &__title {
-      font-size: 24px;
+    grid-template-rows: 52px 0;
+
+    &__active {
+      grid-template-rows: 52px 1fr;
     }
   }
 }
