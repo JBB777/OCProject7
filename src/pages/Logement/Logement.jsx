@@ -5,13 +5,15 @@ import Host from '../../components/Host/Host';
 import Rating from '../../components/Rating/Rating';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import logements from '../../datas/logements.json';
-import { Link, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
-  if (logement == 'undefined') {
-    return <Link to="/error"></Link>;
+
+  /* Return to 404 if the logement id don't exist */
+  if (!logement) {
+    return <Navigate from="*" to="/404" />;
   }
 
   return (

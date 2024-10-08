@@ -7,12 +7,10 @@ function Carrousel(props) {
 
   function prevPicture() {
     setIndex(index === 0 ? length - 1 : index - 1);
-    //if (index == 0) { setIndex = length - 1;} else {setIndex = index - 1;}
   }
 
   function nextPicture() {
     setIndex(index === length - 1 ? 0 : index + 1);
-    //if (index == length - 1) { setIndex = 0;} else {setIndex = index + 1;}
   }
 
   return (

@@ -1,6 +1,7 @@
 import './Banner.scss';
 
 function Banner(props) {
+  /* Fct to fix the opacity on the banner depending on the page */
   function bannerOpacity() {
     if (props.title === '') {
       return <div className="banner__opacity banner__opacity-about"></div>;
@@ -8,6 +9,7 @@ function Banner(props) {
       return <div className="banner__opacity"></div>;
     }
   }
+
   return (
     <div className="banner">
       {bannerOpacity()}

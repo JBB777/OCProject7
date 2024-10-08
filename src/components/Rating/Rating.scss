@@ -12,5 +12,9 @@
 @media screen and (min-width: 768px) {
   .rating-container {
     order: 2;
+    img {
+      width: 36px;
+      height: 36px;
+    }
   }
 }

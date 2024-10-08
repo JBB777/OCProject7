@@ -6,6 +6,10 @@
 
   &__active {
     grid-template-rows: 30px 1fr;
+    i {
+      rotate: 180deg;
+      transition: all 0.5s;
+    }
   }
 
   &__title-container {
@@ -18,9 +22,7 @@
     color: white;
     i {
       font-size: 18px;
-    }
-    .fa-solid-inactive {
-      display: none;
+      transition: all 0.5s;
     }
   }
 
@@ -73,6 +75,9 @@
 
     &__active {
       grid-template-rows: 52px 1fr;
+    }
+    &__title {
+      font-size: 18px;
     }
   }
 }

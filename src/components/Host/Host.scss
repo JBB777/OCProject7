@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   &__name {
     color: var(--primary-color);
-    width: 5ch;
+    width: min-content;
+    text-align: right;
   }
   &__img {
     border-radius: 65px;
