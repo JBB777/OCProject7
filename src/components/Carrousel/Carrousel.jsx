@@ -13,6 +13,17 @@ function Carrousel(props) {
     setIndex(index === length - 1 ? 0 : index + 1);
   }
 
+  function displayArrows() {
+    if (length > 1) {
+      return (
+        <>
+          <i className="fa-solid fa-chevron-left" onClick={prevPicture}></i>
+          <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>
+        </>
+      );
+    }
+  }
+
   return (
     <div className="carrousel">
       <img
@@ -20,8 +31,7 @@ function Carrousel(props) {
         src={props.pictures[index]}
         alt={`Photo numéro ${index + 1} du carrousel`}
       />
-      <i className="fa-solid fa-chevron-left" onClick={prevPicture}></i>
-      <i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>
+      {displayArrows()}
     </div>
   );
 }
