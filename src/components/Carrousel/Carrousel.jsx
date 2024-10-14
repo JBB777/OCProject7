@@ -34,6 +34,9 @@ function Carrousel(props) {
         alt={`Photo numéro ${index + 1} du carrousel`}
       />
       {displayArrows()}
+      <span className="carrousel__pagination">
+        {index + 1}/{length}
+      </span>
     </div>
   );
 }

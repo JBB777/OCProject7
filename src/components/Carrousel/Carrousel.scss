@@ -22,6 +22,23 @@
   .fa-chevron-right {
     right: 10px;
   }
+
+  &__pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carrousel {
+    &__pagination {
+      display: block;
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -29,6 +46,10 @@
     height: 415px;
     &__img {
       border-radius: 25px;
+    }
+
+    &__pagination {
+      font-size: 18px;
     }
   }
 }
